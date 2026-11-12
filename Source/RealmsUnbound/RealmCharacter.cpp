@@ -24,8 +24,8 @@ ARealmCharacter::ARealmCharacter()
     Body->SetupAttachment(RootComponent);
     Body->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     Body->SetRelativeScale3D(FVector(0.55f, 0.55f, 1.5f));
-    static ConstructorHelpers::FObjectFinder<UStaticMesh> Mesh(TEXT("/Engine/BasicShapes/Cube.Cube"));
-    if (Mesh.Succeeded()) Body->SetStaticMesh(Mesh.Object);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> PrototypeMeshAsset(TEXT("/Engine/BasicShapes/Cube.Cube"));
+    if (PrototypeMeshAsset.Succeeded()) Body->SetStaticMesh(PrototypeMeshAsset.Object);
 }
 void ARealmCharacter::Forward(float Value)
 {
