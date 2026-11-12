@@ -1,11 +1,11 @@
 # Realms Unbound
 
-An Unreal Engine 5.4 C++ starting point for the Realms Unbound design.
+An Unreal Engine 5.8 C++ starting point for the Realms Unbound design.
 
 ## Run locally
 
-1. Install Unreal Engine 5.4 and its supported C++ compiler (Visual Studio 2022 with Game development with C++ on Windows).
-2. Right-click `RealmsUnbound.uproject` and generate project files.
+1. Install Unreal Engine 5.8 and its supported C++ compiler (on Windows, use the Visual Studio version and toolchain required by UE 5.8, with the Game development with C++ workload and Windows SDK).
+2. If the project asks for another engine version, right-click `RealmsUnbound.uproject`, choose **Switch Unreal Engine version**, and select your installed 5.8 engine. Then right-click `RealmsUnbound.uproject` and generate project files.
 3. Build the **Development Editor** target, then open the project.
 4. Open a new **Basic** level, set World Settings → GameMode Override to `RealmGameMode` (or None to use the project default), and add a Player Start at `(0, -7000, 150)`.
 5. Save the level as `/Game/Maps/Valoria`, set it as both startup and game default map in Project Settings → Maps & Modes, and press Play.
